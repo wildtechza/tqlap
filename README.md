@@ -21,3 +21,9 @@ Local Timing Display
 Online Timing Display
 - [ ] 
 
+Technologies
+- .Net 5.0
+- AvaloniaUI for cross-platform GUI
+- sqlite
+
+
