@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-namespace tqlap
+namespace WildTech.TQLap
 {
     public class App : Application
     {
