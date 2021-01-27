@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/WildTech.TQLap/bin/Debug/net5.0/tqlap.dll",
+            "program": "${workspaceFolder}/src/WildTech.TQLap/bin/Debug/net5.0/WildTech.TQLap.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/WildTech.TQLap",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
