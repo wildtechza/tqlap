@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace WildTech.TQLap
+namespace WildTech.TQLap.Views
 {
     public class MainWindow : Window
     {

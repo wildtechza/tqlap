@@ -1,0 +1,8 @@
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\bin\Debug\netstandard2.0\WildTech.TQLap.Presentation.deps.json
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\bin\Debug\netstandard2.0\WildTech.TQLap.Presentation.dll
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\bin\Debug\netstandard2.0\WildTech.TQLap.Presentation.pdb
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\obj\Debug\netstandard2.0\WildTech.TQLap.Presentation.AssemblyInfoInputs.cache
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\obj\Debug\netstandard2.0\WildTech.TQLap.Presentation.AssemblyInfo.cs
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\obj\Debug\netstandard2.0\WildTech.TQLap.Presentation.csproj.CoreCompileInputs.cache
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\obj\Debug\netstandard2.0\WildTech.TQLap.Presentation.dll
+C:\dev\TQLap\src\WildTech.TQLap.Presentation\obj\Debug\netstandard2.0\WildTech.TQLap.Presentation.pdb
