@@ -11,9 +11,16 @@ Setup
 - [ ] Series
 
 Race Timing
-- [ ] Mock Transponder System
-- [ ] Manual
-- [ ] AMBrc
+- Input
+	- [ ] Manual
+	- [ ] Mock Transponder System
+	- [ ] AMBrc
+- [ ] Laps
+- [ ] Best Lap Time
+- [ ] Average Lap Time
+- Race Start
+	- [ ] Staggered
+	- [ ] Grid
 
 Local Timing Display
 - [ ] 

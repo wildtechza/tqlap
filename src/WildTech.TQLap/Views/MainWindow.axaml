@@ -15,66 +15,21 @@
     <designTime:MainWindowViewModel />
   </Design.DataContext>
   
-
-    <!--<Panel
-      Background="AliceBlue">
-    </Panel>-->
-
   <Panel>
-    <ListBox 
-      Padding="0"
-      BorderThickness="0"
-      Items="{Binding MenuItems, Mode=OneWay}"
-      Background="Transparent">
+
+    <ListBox Items="{Binding MenuItems}">
       <ListBox.ItemTemplate>
-        <DataTemplate DataType="interfaces:IMainWindowViewModel">
-
-
-          <Grid ColumnDefinitions="Auto, *">
-            <DrawingPresenter Grid.Column="0"
-                              Opacity="0.5"
-                              Margin="10 0 5 0"
-                              Height="60"
-                              Width="60"
-                              Drawing="{DynamicResource CloudDrawing}"/>
-            <StackPanel Grid.Column="1" Margin="10 5">
-              <TextBlock Text="{Binding Name}"
-                         FontSize="15" />
-              <TextBlock Text="{Binding Description}"
-                         TextWrapping="Wrap"
-                         Opacity="0.5"
-                         Margin="0 5 0 0" />
-              <StackPanel Orientation="Horizontal">
-                <TextBox Classes="Badge" Text="{Binding Size}" />
-              </StackPanel>
-            </StackPanel>
-          </Grid>
-          
-          
-          <!--<TextBox Classes="Badge" Text="{Binding Name}" />-->
-          
-          <!--<Grid ColumnDefinitions="Auto, *">
-            --><!--<DrawingPresenter Grid.Column="0"
-                              Opacity="0.5"
-                              Margin="10 0 5 0"
-                              Height="60"
-                              Width="60"
-                              />--><!--
-            <StackPanel Grid.Column="1" Margin="10 5">
-              --><!--<TextBlock Text="{Binding Name}"
-                         FontSize="15" />--><!--
-              --><!--<TextBlock Text="{Binding Description}"
-                         TextWrapping="Wrap"
-                         Opacity="0.5"
-                         Margin="0 5 0 0" />--><!--
-              <StackPanel Orientation="Horizontal">
-                --><!--<TextBox Classes="Badge" Text="{Binding Size}" />--><!--
-              </StackPanel>
-            </StackPanel>
-          </Grid>-->
+        <DataTemplate>
+          <Panel>
+            <TextBlock Text="{Binding Name}"
+                             TextWrapping="Wrap"
+                             Opacity="0.5"
+                             Margin="0 5 0 0" />
+          </Panel>
         </DataTemplate>
-      </ListBox.ItemTemplate>
+      </ListBox.ItemTemplate>      
     </ListBox>
+    
   </Panel>
    
 

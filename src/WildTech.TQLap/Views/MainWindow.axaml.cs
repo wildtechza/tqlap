@@ -17,6 +17,10 @@ namespace WildTech.TQLap.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+
+            //Avalonia.Controls.ListBox listBox = new ListBox();
+            //listBox.ItemTemplate
+
         }
     }
 }
