@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildTech.TQLap", "WildTech.TQLap\WildTech.TQLap.csproj", "{B3D74379-7D68-4219-9CBF-3A53EF424D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildTech.TQLap.Presentation", "WildTech.TQLap.Presentation\WildTech.TQLap.Presentation.csproj", "{A3853DCA-6DFD-41E5-B657-BB88F87F0C03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildTech.TQLap.Presentation", "WildTech.TQLap.Presentation\WildTech.TQLap.Presentation.csproj", "{A3853DCA-6DFD-41E5-B657-BB88F87F0C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildTech.TQLap.Models", "WildTech.TQLap.Models\WildTech.TQLap.Models.csproj", "{2A8BCB96-401C-41B8-8B58-6EE1E4D92B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A3853DCA-6DFD-41E5-B657-BB88F87F0C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3853DCA-6DFD-41E5-B657-BB88F87F0C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3853DCA-6DFD-41E5-B657-BB88F87F0C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8BCB96-401C-41B8-8B58-6EE1E4D92B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8BCB96-401C-41B8-8B58-6EE1E4D92B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8BCB96-401C-41B8-8B58-6EE1E4D92B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8BCB96-401C-41B8-8B58-6EE1E4D92B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

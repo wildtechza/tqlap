@@ -1,10 +1,9 @@
-using ReactiveUI;
+//using ReactiveUI;
 using System.Collections.Generic;
-using WildTech.TQLap.Presentation.Interfaces;
 
 namespace WildTech.TQLap.Presentation.ViewModels
 {
-    public class MainWindowViewModel : ReactiveObject, IMainWindowViewModel
+    public class MainWindowViewModel //: ReactiveObject, IMainWindowViewModel
     {
         public IEnumerable<MenuItemViewModel> MenuItems { get; } = new List<MenuItemViewModel>
         {

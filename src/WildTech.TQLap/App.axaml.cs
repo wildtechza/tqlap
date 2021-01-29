@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using WildTech.TQLap.Presentation.ViewModels;
 using WildTech.TQLap.Views;
 
 namespace WildTech.TQLap
@@ -16,10 +17,13 @@ namespace WildTech.TQLap
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                desktop.MainWindow = new MainWindow()
+                {
+                    DataContext = new MainWindowViewModel()
+                };
             }
 
             base.OnFrameworkInitializationCompleted();
-        }
     }
+}
 }
