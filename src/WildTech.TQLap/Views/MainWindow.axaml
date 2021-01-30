@@ -14,23 +14,65 @@
   <Design.DataContext>
     <designTime:MainWindowViewModel />
   </Design.DataContext>
-  
-  <Panel>
 
-    <ListBox Items="{Binding MenuItems}">
-      <ListBox.ItemTemplate>
-        <DataTemplate>
-          <Panel>
-            <TextBlock Text="{Binding Name}"
-                             TextWrapping="Wrap"
-                             Opacity="0.5"
-                             Margin="0 5 0 0" />
-          </Panel>
-        </DataTemplate>
-      </ListBox.ItemTemplate>      
-    </ListBox>
+
+
+  <!-- Top Tabs -->
+  <TabControl Classes="sidebar" Name="Sidebar">
+    <TabItem Header="Welcome">
+      Welcome!
+    </TabItem>
+    <TabItem Header="Tracks">
+      Tracks go here
+    </TabItem>
+    <TabItem Header="Drivers">
+      Drivers go here
+    </TabItem>
+    <TabItem Header="Classes">
+      Classes go here
+    </TabItem>
+    <TabItem Header="Events">
+      Events go hete
+    </TabItem>
+    <TabItem Header="Races">
+      Races go here
+    </TabItem>
+    <TabItem Header="Series">
+      Series go here
+    </TabItem>
+  </TabControl>
+
+
+  <!-- ListBox Menu -->
+  <!--<Grid Grid.Row="1">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+
+      <ListBox 
+        Grid.Column="0"
+        Items="{Binding MenuItems}"
+        SelectedItem="{Binding SelectedMenuItem}"
+        Background="DarkGray">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+              <TextBlock 
+                Text="{Binding Name}"
+                TextWrapping="Wrap"
+                Opacity="0.5"
+                Margin="0 5 0 0" />
+          </DataTemplate>
+        </ListBox.ItemTemplate>      
+      </ListBox>
+
+    <Panel
+      Grid.Column="1"
+      Background="Pink">
+      <TextBlock>Test</TextBlock>
+    </Panel>
     
-  </Panel>
+  </Grid>-->
    
 
 </Window>

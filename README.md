@@ -1,11 +1,15 @@
 # tqlap
 RC Lap Timing Software
 
-Setup
+The goals for this software is to provide free timing for RC racing with integration to the AMBrc timing system.
+
+Setup/Selections
+- [ ] Tracks
 - [ ] Drivers
-- [ ] Events
 - [ ] Classes
+- [ ] Events
 - [ ] Races
+	- [ ] X Practices, Y Qualifiers, Z Finals
     - [ ] Groups (A, B, C)
     - [ ] Bump ups
 - [ ] Series
