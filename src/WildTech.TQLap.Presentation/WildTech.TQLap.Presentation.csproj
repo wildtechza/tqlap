@@ -8,4 +8,8 @@
     <Folder Include="DesignTime\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WildTech.TQLap.Models\WildTech.TQLap.Models.csproj" />
+  </ItemGroup>
+
 </Project>
