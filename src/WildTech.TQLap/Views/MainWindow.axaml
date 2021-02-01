@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:interfaces="clr-namespace:WildTech.TQLap.Presentation.Interfaces;assembly=WildTech.TQLap.Presentation"
         xmlns:designTime="clr-namespace:WildTech.TQLap.Presentation.ViewModels;assembly=WildTech.TQLap.Presentation"
+        xmlns:pages="clr-namespace:WildTech.TQLap.Pages;assembly=WildTech.TQLap"
         mc:Ignorable="d" 
         d:DesignWidth="800" 
         d:DesignHeight="450"
@@ -15,64 +16,46 @@
     <designTime:MainWindowViewModel />
   </Design.DataContext>
 
-
+  <Window.Styles>
+    <Style Selector="TabControl">
+      <Setter Property="Background" Value="#444444"/>
+    </Style>
+    <Style Selector="TabControl WrapPanel">
+      <Setter Property="Background" Value="#222222"/>
+    </Style>
+    <Style Selector="TabItem:selected">
+      <Setter Property="Background" Value="#444444"/>
+    </Style>
+  </Window.Styles>
 
   <!-- Top Tabs -->
   <TabControl Classes="sidebar" Name="Sidebar">
     <TabItem Header="Welcome">
-      Welcome!
+      <pages:WelcomePage/>
+    </TabItem>
+    <TabItem Header="Settings">
+      <pages:SettingsPage/>
     </TabItem>
     <TabItem Header="Tracks">
-      Tracks go here
+      <pages:TracksPage/>
     </TabItem>
     <TabItem Header="Drivers">
-      Drivers go here
+      <pages:DriversPage/>
     </TabItem>
     <TabItem Header="Classes">
-      Classes go here
+      <pages:ClassesPage/>
     </TabItem>
     <TabItem Header="Events">
-      Events go hete
+      <pages:EventsPage/>
     </TabItem>
     <TabItem Header="Races">
-      Races go here
+      <pages:RacesPage/>
+    </TabItem>
+    <TabItem Header="Timing">
+      <pages:TimingPage/>
     </TabItem>
     <TabItem Header="Series">
-      Series go here
+      <pages:SeriesPage/>
     </TabItem>
   </TabControl>
-
-
-  <!-- ListBox Menu -->
-  <!--<Grid Grid.Row="1">
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="*" />
-      <ColumnDefinition Width="Auto" />
-    </Grid.ColumnDefinitions>
-
-      <ListBox 
-        Grid.Column="0"
-        Items="{Binding MenuItems}"
-        SelectedItem="{Binding SelectedMenuItem}"
-        Background="DarkGray">
-        <ListBox.ItemTemplate>
-          <DataTemplate>
-              <TextBlock 
-                Text="{Binding Name}"
-                TextWrapping="Wrap"
-                Opacity="0.5"
-                Margin="0 5 0 0" />
-          </DataTemplate>
-        </ListBox.ItemTemplate>      
-      </ListBox>
-
-    <Panel
-      Grid.Column="1"
-      Background="Pink">
-      <TextBlock>Test</TextBlock>
-    </Panel>
-    
-  </Grid>-->
-   
-
 </Window>

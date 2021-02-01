@@ -1,7 +1,7 @@
 # tqlap
 RC Lap Timing Software
 
-The goals for this software is to provide free timing for RC racing with integration to the AMBrc timing system.
+The goal for this software is to provide free timing for RC racing with integration to the AMBrc timing system and to run cross-platform between Windows & Linux.
 
 Setup/Selections
 - [ ] Tracks
@@ -25,12 +25,8 @@ Race Timing
 - Race Start
 	- [ ] Staggered
 	- [ ] Grid
-
-Local Timing Display
-- [ ] 
-
-Online Timing Display
-- [ ] 
+- [ ] Local Timing Display
+- [ ] Online Timing Display
 
 Technologies
 - .Net 5.0
