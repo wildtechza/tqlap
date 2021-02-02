@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WildTech.TQLap.Controls.TrackControl">
+             x:Class="WildTech.TQLap.Controls.DriverControl">
   <Grid>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -13,8 +13,18 @@
       <RowDefinition Height="auto"></RowDefinition>
       <RowDefinition Height="auto"></RowDefinition>
       <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
     </Grid.RowDefinitions>
-    <TextBlock Grid.Column="0" Grid.Row="0">Name</TextBlock>
-    <TextBox Grid.Column="1" Grid.Row="0" MinWidth="300"></TextBox>
+    <TextBlock Grid.Column="0" Grid.Row="0">First Name</TextBlock>
+    <TextBox Grid.Column="1" Grid.Row="0" Width="300"></TextBox>
+    <TextBlock Grid.Column="0" Grid.Row="1">Last Name</TextBlock>
+    <TextBox Grid.Column="1" Grid.Row="1" Width="300"></TextBox>
+    <TextBlock Grid.Column="0" Grid.Row="2">Country</TextBlock>
+    <DropDown Grid.Column="1" Grid.Row="2" Width="300">
+      <DropDownItem>Afghanistan</DropDownItem>
+      <DropDownItem>Algeria</DropDownItem>
+      <DropDownItem>South Africa (ZA)</DropDownItem>
+      <DropDownItem>Zimbabwe</DropDownItem>
+    </DropDown>
   </Grid>
 </UserControl>

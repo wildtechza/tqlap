@@ -8,12 +8,25 @@
   <Grid>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="*"></ColumnDefinition>
-      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="auto"></ColumnDefinition>
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
+      <RowDefinition Height="Auto"></RowDefinition>
     </Grid.RowDefinitions>
-    <ListBox Grid.Column="0" Grid.Row="0">
+    <StackPanel 
+      Grid.Column="0" 
+      Grid.Row="0" 
+      Orientation="Horizontal"
+      Margin="2" 
+      Spacing="4">
+      <Button Background="#03c03c">Add</Button>
+      <Button Background="#c23b22">Delete</Button>
+    </StackPanel>
+    <!--<GridSplitter Background="DarkGray" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+    </GridSplitter>-->
+    <ListBox Grid.Column="0" Grid.Row="2" Background="Transparent">
       <ListBoxItem>
         Track 1
       </ListBoxItem>
@@ -39,6 +52,6 @@
         Track 8
       </ListBoxItem>
     </ListBox>
-    <controls:TrackControl Grid.Column="1" Grid.Row="0"></controls:TrackControl>
+    <controls:TrackControl Grid.Column="1" Grid.Row="2"></controls:TrackControl>
   </Grid>
 </UserControl>

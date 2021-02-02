@@ -2,18 +2,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:WildTech.TQLap.Controls;assembly=WildTech.TQLap"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="WildTech.TQLap.Pages.DriversPage">
-  <ListBox>
-    <!--<ListBox.ItemTemplate>
-      <DataTemplate>
-        <Border Background="Red" CornerRadius="4" Padding="4">
-          <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
-        </Border>
-      </DataTemplate>
-    </ListBox.ItemTemplate>-->
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="auto"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"></RowDefinition>
+      <RowDefinition Height="auto"></RowDefinition>
+    </Grid.RowDefinitions>
+    <StackPanel
+      Grid.Column="0"
+      Grid.Row="0"
+      Orientation="Horizontal"
+      Margin="2"
+      Spacing="4">
+      <Button Background="#03c03c">Add</Button>
+      <Button Background="#c23b22">Delete</Button>
+    </StackPanel>
+  <ListBox Grid.Column="0" Grid.Row="1"
+           Background="Transparent">
     <ListBoxItem>
-      <Grid>
+      <Grid HorizontalAlignment="Stretch">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*"></ColumnDefinition>
           <ColumnDefinition Width="*"></ColumnDefinition>
@@ -58,4 +72,6 @@
       </Grid>
     </ListBoxItem>
   </ListBox>
+  <controls:DriverControl Grid.Column="1" Grid.Row="1"></controls:DriverControl>
+  </Grid>
 </UserControl>
